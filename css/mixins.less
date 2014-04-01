@@ -1,0 +1,38 @@
+.border-radius(@args) {
+	-webkit-border-radius: @args;
+	-moz-border-radius: @args;
+	border-radius: @args;
+}
+
+.box-sizing(@args) {
+	-webkit-box-sizing: @args;
+	-moz-box-sizing: @args;
+	box-sizing: @args;
+}
+
+.shadow(@args) {
+	-webkit-box-shadow:  @args;
+	-moz-box-shadow: @args;
+	box-shadow: @args;
+}
+
+.radial-gradient(@center, @edge) {
+	background: @center;
+	background: -moz-radial-gradient(center, ellipse cover,  @center 0%, @edge 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,@center), color-stop(100%,@edge));
+	background: -webkit-radial-gradient(center, ellipse cover,  @center 0%,@edge 100%);
+	background: -o-radial-gradient(center, ellipse cover,  @center 0%,@edge 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  @center 0%,@edge 100%);
+	background: radial-gradient(ellipse at center,  @center 0%,@edge 100%);
+}
+
+.animation(@args) {
+	-webkit-animation: @args;
+	-moz-animation: @args;
+	-ms-animation: @args;
+}
+
+.iteration(@args) {
+	-webkit-animation-iteration-count: @args;
+	-moz-animation-iteration-count: @args;
+}
